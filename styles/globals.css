@@ -1,3 +1,15 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@font-face {
+    font-family: "PKMN-RBYGSC";
+    src: url("../public/fonts/PKMN-RBYGSC.ttf");
+    font-style: normal;
+    font-weight: 400;
+    font-display: swap;
+  }
+
+  .app {
+      font-family: 'PKMN-RBYGSC', Helvetica, sans-serif;
+  }

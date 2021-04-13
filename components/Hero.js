@@ -1,4 +1,10 @@
-export default function Hero() {
+function Hero({
+  skillsButtonHandler,
+  projectsButtonHandler,
+  contactButtonHandler,
+}) {
+  const buttonClassname = " w-20 lg:w-32 py-3 border-t-2 border-gray-400";
+
   return (
     <>
       <div className="mx-8 md:mx-28 lg:mx-80 h-screen flex flex-col justify-center text-gray-100">
@@ -11,14 +17,20 @@ export default function Hero() {
           </div>
         </div>
 
-        <div className="mt-40 flex justify-center items-center text-xs">
-          <button className="w-20 lg:w-32 py-3 border-t-2 border-gray-100">
+        <div className="mt-40 flex justify-center items-center text-xs text-gray-400">
+          <button className={buttonClassname} onClick={skillsButtonHandler}>
             Skills
           </button>
-          <button className="ml-8 w-20 lg:ml-24 lg:w-32 py-3 border-t-2 border-gray-100">
+          <button
+            className={"ml-8 outline-none" + buttonClassname}
+            onClick={projectsButtonHandler}
+          >
             Projects
           </button>
-          <button className="ml-8 w-20 lg:ml-24 lg:w-32 py-3 border-t-2 border-gray-100">
+          <button
+            className={"ml-8" + buttonClassname}
+            onClick={contactButtonHandler}
+          >
             Contact
           </button>
         </div>
@@ -26,3 +38,5 @@ export default function Hero() {
     </>
   );
 }
+
+export default Hero;

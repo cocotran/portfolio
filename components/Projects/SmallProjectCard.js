@@ -1,8 +1,8 @@
 export default function SmallProjectCard() {
   return (
     <>
-      <div className="w-full py-8 px-8 bg-gray-700 rounded-md">
-        <p className="tracking-wider">Colculator</p>
+      <div className="w-full py-8 px-8 bg-gray-700 rounded-md text-gray-400">
+        <p className="tracking-wider text-sm text-white">Colculator</p>
 
         <p className="mt-8 text-xs leading-5">
           Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec eu odio

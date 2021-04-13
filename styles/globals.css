@@ -3,13 +3,21 @@
 @tailwind utilities;
 
 @font-face {
-    font-family: "PKMN-RBYGSC";
-    src: url("../public/fonts/PKMN-RBYGSC.ttf");
-    font-style: normal;
-    font-weight: 400;
-    font-display: swap;
-  }
+  font-family: "PKMN-RBYGSC";
+  src: url("../public/fonts/PKMN-RBYGSC.ttf");
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+}
 
-  .app {
-      font-family: 'PKMN-RBYGSC', Helvetica, sans-serif;
-  }
+.app {
+  font-family: "PKMN-RBYGSC", Helvetica, sans-serif;
+}
+
+.text-blue-theme {
+  color: #64ffda;
+}
+
+.text-xxs {
+  font-size: 0.65rem;
+}

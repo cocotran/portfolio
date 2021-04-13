@@ -11,20 +11,20 @@ export default function Skills() {
 
   return (
     <>
-      <div className="mx-80 md:mx-28 text-gray-100 tracking-wide">
+      <div className="mx-8 md:mx-28 lg:mx-80 text-gray-100 tracking-wide">
         <div className="flex items-center">
-          <h1 className="text-xl tracking-wider ">Skills</h1>
-          <div className="w-60 ml-3 border-t border-gray-600"></div>
+          <h1 className="lg:text-xl tracking-wider">Skills</h1>
+          <div className="w-full lg:w-60 ml-3 border-t border-gray-600"></div>
         </div>
 
         <div className="mt-8">
-          <p className="text-sm">
+          <p className="text-xs lg:text-sm">
             Here are a few technologies I've been working with:
           </p>
 
-          <div className="mt-8 flex justify-center text-sm">
+          <div className="mt-8 flex justify-between lg:justify-center text-sm">
             <div>{languageList}</div>
-            <div className="ml-40">{techList}</div>
+            <div className="lg:ml-40">{techList}</div>
           </div>
         </div>
       </div>

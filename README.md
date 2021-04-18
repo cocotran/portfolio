@@ -3,7 +3,7 @@
 Personal website built with Next.js and Tailwind CSS
 
 ## Resources
-[Collection of portfolio for inspiration](https://github.com/HackathonHackers/personal-sites)
+[Collection of portfolios for inspiration](https://github.com/HackathonHackers/personal-sites)  
 [This beautiful website](https://brittanychiang.com/)
 
   

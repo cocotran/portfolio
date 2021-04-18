@@ -1,5 +1,5 @@
 import Head from "next/head";
-import { useRef, useState } from "react";
+import { useEffect, useRef, useState } from "react";
 
 // import Navbar from "../components/Navbar/Navbar";
 import NavbarMobile from "../components/Navbar/NavbarMobile";
@@ -25,24 +25,47 @@ export default function Home() {
     contactRef.current.scrollIntoView({ behavior: "smooth" });
   }
 
-  const [isNavbarMobileVisible, setIsNavbarMobileVisible] = useState("hidden");
+  const [isNavbarMobileVisible, setIsNavbarMobileVisible] = useState(false);
+  const [isBelowStickyButtons, setIsBelowStickyButtons] = useState(false);
+  const [navbarState, setNavbarState] = useState("hidden");
 
-  function showNavbarMobile(isVisible) {
-    setIsNavbarMobileVisible(isVisible ? "" : "hidden");
+  function setIsNavbarMobileVisibleWrapper(isVisible) {
+    setIsNavbarMobileVisible(isVisible);
   }
+
+  function showNavbarMobile() {
+    setNavbarState(
+      isNavbarMobileVisible && isBelowStickyButtons ? "" : "hidden"
+    );
+  }
+
+  let prevScrollpos = window.pageYOffset;
+  window.onscroll = function () {
+    var currentScrollPos = window.pageYOffset;
+    if (prevScrollpos > currentScrollPos) {
+      setIsBelowStickyButtons(true);
+    } else {
+      setIsBelowStickyButtons(false);
+    }
+    prevScrollpos = currentScrollPos;
+  };
+
+  useEffect(() => {
+    showNavbarMobile();
+  }, [isNavbarMobileVisible, isBelowStickyButtons]);
 
   return (
     <>
       <div className="app bg-gray-900">
         {/* <Navbar /> */}
 
-        <NavbarMobile display={isNavbarMobileVisible} />
+        <NavbarMobile display={navbarState} />
 
         <Hero
           skillsButtonHandler={skillsButtonHandler}
           projectsButtonHandler={projectsButtonHandler}
           contactButtonHandler={contactButtonHandler}
-          showNavbarMobile={showNavbarMobile}
+          setIsNavbarMobileVisibleWrapper={setIsNavbarMobileVisibleWrapper}
         />
 
         <Skills ref={skillsRef} />

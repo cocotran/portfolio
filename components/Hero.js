@@ -5,7 +5,7 @@ function Hero({
   skillsButtonHandler,
   projectsButtonHandler,
   contactButtonHandler,
-  showNavbarMobile,
+  setIsNavbarMobileVisibleWrapper,
 }) {
   // CSS class style
   const BUTTON_CLASSNAME = " w-20 lg:w-32 mt-3 py-3 border-t-2 border-gray-400";
@@ -32,7 +32,7 @@ function Hero({
   }, []);
 
   useEffect(() => {
-    showNavbarMobile(isSticky);
+    setIsNavbarMobileVisibleWrapper(isSticky);
   }, [isSticky]);
 
   return (

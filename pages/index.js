@@ -3,6 +3,7 @@ import { useEffect, useRef, useState } from "react";
 
 // import Navbar from "../components/Navbar/Navbar";
 import NavbarMobile from "../components/Navbar/NavbarMobile";
+import SideBar from "../components/Navbar/SideBar";
 import Hero from "../components/Hero";
 import Skills from "../components/Skills";
 import Projects from "../components/Projects";
@@ -39,6 +40,10 @@ export default function Home() {
     );
   }
 
+  function setNavbarStateWrapper(bShow) {
+    setNavbarState(bShow ? "" : "hidden");
+  }
+
   if (typeof window !== "undefined") {
     let prevScrollpos = window.pageYOffset;
     window.onscroll = function () {
@@ -56,12 +61,37 @@ export default function Home() {
     showNavbarMobile();
   }, [isNavbarMobileVisible, isBelowStickyButtons]);
 
+  const [showSideBar, setShowSideBar] = useState(false);
+
+  function setShowSideBarWrapper(bShow) {
+    setShowSideBar(bShow);
+  }
+
+  function displaySideBar() {
+    if (showSideBar) {
+      return (
+        <SideBar
+          skillsButtonHandler={skillsButtonHandler}
+          projectsButtonHandler={projectsButtonHandler}
+          contactButtonHandler={contactButtonHandler}
+          setShowSideBarWrapper={setShowSideBarWrapper}
+          setNavbarStateWrapper={setNavbarStateWrapper}
+        />
+      );
+    }
+  }
+
   return (
     <>
       <div className="app bg-gray-900">
         {/* <Navbar /> */}
 
-        <NavbarMobile display={navbarState} />
+        <NavbarMobile
+          display={navbarState}
+          setShowSideBarWrapper={setShowSideBarWrapper}
+        />
+
+        {displaySideBar()}
 
         <Hero
           skillsButtonHandler={skillsButtonHandler}

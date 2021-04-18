@@ -29,3 +29,11 @@ button:focus {
 .button-label:hover > .down-arrow {
   opacity: 1.0;
 } 
+
+.blur {
+  backdrop-filter: blur(8px);
+}
+
+.side-bar-button-label:hover > .arrow {
+  opacity: 1;
+}

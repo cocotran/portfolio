@@ -8,7 +8,7 @@ function Hero({
   setIsNavbarMobileVisibleWrapper,
 }) {
   // CSS class style
-  const BUTTON_CLASSNAME = " w-20 lg:w-32 mt-3 py-3 border-t-2 border-gray-400";
+  const BUTTON_CLASSNAME = " w-20 lg:w-32 mt-2 py-3 border-t-2 border-gray-400 hover:border-gray-300 hover:text-gray-300";
   const BUTTON_LABEL_CLASSNAME =
     " flex flex-col justify-between items-center cursor-pointer button-label";
 

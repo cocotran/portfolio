@@ -39,16 +39,18 @@ export default function Home() {
     );
   }
 
-  let prevScrollpos = window.pageYOffset;
-  window.onscroll = function () {
-    var currentScrollPos = window.pageYOffset;
-    if (prevScrollpos > currentScrollPos) {
-      setIsBelowStickyButtons(true);
-    } else {
-      setIsBelowStickyButtons(false);
-    }
-    prevScrollpos = currentScrollPos;
-  };
+  if (typeof window !== "undefined") {
+    let prevScrollpos = window.pageYOffset;
+    window.onscroll = function () {
+      var currentScrollPos = window.pageYOffset;
+      if (prevScrollpos > currentScrollPos) {
+        setIsBelowStickyButtons(true);
+      } else {
+        setIsBelowStickyButtons(false);
+      }
+      prevScrollpos = currentScrollPos;
+    };
+  }
 
   useEffect(() => {
     showNavbarMobile();

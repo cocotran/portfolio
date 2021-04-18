@@ -25,3 +25,7 @@
 button:focus {
   outline: none;
 }
+
+.button-label:hover > .down-arrow {
+  opacity: 1.0;
+} 

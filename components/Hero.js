@@ -1,9 +1,14 @@
+import Image from "next/image";
+
 function Hero({
   skillsButtonHandler,
   projectsButtonHandler,
   contactButtonHandler,
 }) {
-  const buttonClassname = " w-20 lg:w-32 py-3 border-t-2 border-gray-400";
+  const buttonClassname = " w-20 lg:w-32 mt-3 py-3 border-t-2 border-gray-400";
+
+  const buttonLabelClassname =
+    " flex flex-col justify-between items-center cursor-pointer button-label";
 
   return (
     <>
@@ -18,21 +23,47 @@ function Hero({
         </div>
 
         <div className="mt-40 flex justify-center items-center text-xs text-gray-400">
-          <button className={buttonClassname} onClick={skillsButtonHandler}>
-            Skills
-          </button>
-          <button
-            className={"ml-8 outline-none" + buttonClassname}
-            onClick={projectsButtonHandler}
-          >
-            Projects
-          </button>
-          <button
-            className={"ml-8" + buttonClassname}
-            onClick={contactButtonHandler}
-          >
-            Contact
-          </button>
+          <label className={buttonLabelClassname}>
+            <div className="opacity-0 down-arrow">
+              <Image
+                src="/images/arrow-down.svg"
+                alt="Arrow"
+                width={30}
+                height={30}
+              />
+            </div>
+            <button className={buttonClassname} onClick={skillsButtonHandler}>
+              Skills
+            </button>
+          </label>
+
+          <label className={"ml-8" + buttonLabelClassname}>
+            <div className="opacity-0 down-arrow">
+              <Image
+                src="/images/arrow-down.svg"
+                alt="Arrow"
+                width={30}
+                height={30}
+              />
+            </div>
+            <button className={buttonClassname} onClick={projectsButtonHandler}>
+              Projects
+            </button>
+          </label>
+
+          <label className={"ml-8" + buttonLabelClassname}>
+            <div className="opacity-0 down-arrow">
+              <Image
+                src="/images/arrow-down.svg"
+                alt="Arrow"
+                width={30}
+                height={30}
+              />
+            </div>
+            <button className={buttonClassname} onClick={contactButtonHandler}>
+              Contact
+            </button>
+          </label>
         </div>
       </div>
     </>

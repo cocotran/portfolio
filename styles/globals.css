@@ -27,8 +27,8 @@ button:focus {
 }
 
 .button-label:hover > .down-arrow {
-  opacity: 1.0;
-} 
+  opacity: 1;
+}
 
 .blur {
   backdrop-filter: blur(8px);
@@ -36,4 +36,9 @@ button:focus {
 
 .side-bar-button-label:hover > .arrow {
   opacity: 1;
+}
+
+ul.square {
+  list-style-type: square;
+  list-style-position: inside;
 }

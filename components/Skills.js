@@ -2,22 +2,8 @@ import React from "react";
 
 function Skills(props, ref) {
   const language = ["C++", "Java", "Python", "JavaScript"];
-  const languageList = language.map(function (item) {
-    return (
-      <p key={item} className="mb-3">
-        {item}
-      </p>
-    );
-  });
 
   const tech = ["React", "Next", "Spring", "Flask"];
-  const techList = tech.map(function (item) {
-    return (
-      <p key={item} className="mb-3">
-        {item}
-      </p>
-    );
-  });
 
   return (
     <>
@@ -34,8 +20,8 @@ function Skills(props, ref) {
           </p>
 
           <div className="mt-8 text-xs lg:text-sm flex justify-between lg:justify-center">
-            <div>{languageList}</div>
-            <div className="lg:ml-40">{techList}</div>
+            <SkillList skills={language} />
+            <SkillList skills={tech} />
           </div>
         </div>
       </div>
@@ -46,3 +32,17 @@ function Skills(props, ref) {
 const forwardedSkill = React.forwardRef(Skills);
 
 export default forwardedSkill;
+
+export function SkillList({ skills }) {
+  return (
+    <ul className="square">
+      {skills.map((item) => {
+        return (
+          <li className="mb-3 text-blue-theme">
+            <span className="text-gray-300">{item}</span>
+          </li>
+        );
+      })}
+    </ul>
+  );
+}

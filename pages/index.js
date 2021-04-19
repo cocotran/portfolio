@@ -105,6 +105,10 @@ export default function Home() {
         <Projects ref={projectsRef} />
 
         <Contact ref={contactRef} />
+
+        <footer className="px-8 py-5 border-t border-gray-700 text-center text-xxs text-gray-600 font-light">
+          Made with️ ❤️ © 2021 Co.
+        </footer>
       </div>
     </>
   );

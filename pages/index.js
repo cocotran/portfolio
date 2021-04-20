@@ -1,7 +1,7 @@
 import Head from "next/head";
 import { useEffect, useRef, useState } from "react";
 
-// import Navbar from "../components/Navbar/Navbar";
+import Navbar from "../components/Navbar/Navbar";
 import NavbarMobile from "../components/Navbar/NavbarMobile";
 import SideBar from "../components/Navbar/SideBar";
 import Hero from "../components/Hero";
@@ -28,16 +28,14 @@ export default function Home() {
 
   const [isNavbarMobileVisible, setIsNavbarMobileVisible] = useState(false);
   const [isBelowStickyButtons, setIsBelowStickyButtons] = useState(false);
-  const [navbarState, setNavbarState] = useState("hidden");
+  const [navbarState, setNavbarState] = useState(false);
 
   function setIsNavbarMobileVisibleWrapper(isVisible) {
     setIsNavbarMobileVisible(isVisible);
   }
 
   function showNavbarMobile() {
-    setNavbarState(
-      isNavbarMobileVisible && isBelowStickyButtons ? "" : "hidden"
-    );
+    setNavbarState(isNavbarMobileVisible && isBelowStickyButtons);
   }
 
   function setNavbarStateWrapper(bShow) {
@@ -84,7 +82,12 @@ export default function Home() {
   return (
     <>
       <div className="app bg-gray-900 text-xl">
-        {/* <Navbar /> */}
+        <Navbar
+          display={navbarState}
+          skillsButtonHandler={skillsButtonHandler}
+          projectsButtonHandler={projectsButtonHandler}
+          contactButtonHandler={contactButtonHandler}
+        />
 
         <NavbarMobile
           display={navbarState}

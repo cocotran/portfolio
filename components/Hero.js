@@ -41,7 +41,9 @@ function Hero({
       <div className="mx-8 md:mx-28 lg:mx-40 xl:mx-80 h-screen flex flex-col justify-center text-gray-100">
         <div className="tracking-wider flex justify-center">
           <div>
-            <p className="text-blue-theme text-xl sm:text-2xl">Hi, my name is</p>
+            <p className="text-blue-theme text-xl sm:text-2xl">
+              Hi, my name is
+            </p>
             <h1 className="mt-8 text-5xl sm:text-6xl md:text-7xl tracking-widest">
               Quang Tran.
             </h1>

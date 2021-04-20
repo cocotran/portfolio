@@ -1,22 +1,22 @@
 [
     {
-        "name": "Colculator",
-        "description": "Engineering tools and cheatsheets",
+        "name": "Lorem ipsum dolor",
+        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec eu odio ut est tristique mollis. Donec condimentum lorem non congue fringilla.",
         "stack": ["Next.js", "Flask", "Firebase"],
         "url": "https://colculator.com/",
         "github": ""
     },
     {
-        "name": "Smart Vape",
-        "description": "Android app for vape usage tracking",
-        "stack": ["Android Studio", "Java"],
+        "name": "Lorem ipsum dolor sit",
+        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec eu odio ut est tristique mollis. Donec condimentum lorem non congue fringilla.",
+        "stack": ["Lorem ", "Java"],
         "url": "",
         "github": ""
     },
     {
-        "name": "Rock Paper Scissor",
-        "description": "Android app for vape usage tracking",
-        "stack": ["Android Studio", "Java"],
+        "name": "Lorem",
+        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec eu odio ut est tristique mollis. Donec condimentum lorem non congue fringilla.",
+        "stack": ["Lorem ", "Java"],
         "url": "",
         "github": ""
     }

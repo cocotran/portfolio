@@ -42,7 +42,7 @@ function Navbar({
                       height={12}
                     />
                   </div>
-                  <button className="ml-2 mr-16 text-base" onClick={item.func}>
+                  <button className="ml-2 mr-16" onClick={item.func}>
                     {item.name}
                   </button>
                 </label>

@@ -7,11 +7,11 @@ function Skills(props, ref) {
 
   return (
     <>
-      <div className="mx-8 md:mx-28 lg:mx-80 text-gray-300 tracking-wide">
+      <div className="mx-8 md:mx-28 lg:mx-40 xl:mx-80 text-gray-300 tracking-wide">
         <div ref={ref} className="h-3"></div>
         <div className="flex items-center">
           <h1 className="text-3xl tracking-wider text-gray-100">Skills</h1>
-          <div className="w-full lg:w-60 ml-3 border-t border-gray-600"></div>
+          <div className="w-full ml-3 border-t border-gray-600"></div>
         </div>
 
         <div className="mt-8">
@@ -19,7 +19,7 @@ function Skills(props, ref) {
             Here are a few technologies I've been working with:
           </p>
 
-          <div className="mt-8 flex justify-between lg:justify-center">
+          <div className="mt-8 sm:mx-28 flex justify-between">
             <SkillList skills={language} />
             <SkillList skills={tech} />
           </div>

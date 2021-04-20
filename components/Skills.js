@@ -10,16 +10,16 @@ function Skills(props, ref) {
       <div className="mx-8 md:mx-28 lg:mx-80 text-gray-300 tracking-wide">
         <div ref={ref} className="h-3"></div>
         <div className="flex items-center">
-          <h1 className="lg:text-xl tracking-wider text-gray-100">Skills</h1>
+          <h1 className="text-3xl tracking-wider text-gray-100">Skills</h1>
           <div className="w-full lg:w-60 ml-3 border-t border-gray-600"></div>
         </div>
 
         <div className="mt-8">
-          <p className="text-xs lg:text-sm text-gray-400">
+          <p className="text-gray-400">
             Here are a few technologies I've been working with:
           </p>
 
-          <div className="mt-8 text-xs lg:text-sm flex justify-between lg:justify-center">
+          <div className="mt-8 flex justify-between lg:justify-center">
             <SkillList skills={language} />
             <SkillList skills={tech} />
           </div>
@@ -38,7 +38,7 @@ export function SkillList({ skills }) {
     <ul className="square">
       {skills.map((item) => {
         return (
-          <li className="mb-3 text-blue-theme">
+          <li key={item} className="mb-3 text-blue-theme">
             <span className="text-gray-300">{item}</span>
           </li>
         );

@@ -1,0 +1,23 @@
+[
+    {
+        "name": "Colculator",
+        "description": "Engineering tools and cheatsheets",
+        "stack": ["Next.js", "Flask", "Firebase"],
+        "url": "https://colculator.com/",
+        "github": ""
+    },
+    {
+        "name": "Smart Vape",
+        "description": "Android app for vape usage tracking",
+        "stack": ["Android Studio", "Java"],
+        "url": "",
+        "github": ""
+    },
+    {
+        "name": "Rock Paper Scissor",
+        "description": "Android app for vape usage tracking",
+        "stack": ["Android Studio", "Java"],
+        "url": "",
+        "github": ""
+    }
+]

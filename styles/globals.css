@@ -2,7 +2,8 @@
 @tailwind components;
 @tailwind utilities;
 
-@font-face {
+
+/* @font-face {
   font-family: "PKMN-RBYGSC";
   src: url("../public/fonts/PKMN-RBYGSC.ttf");
   font-style: normal;
@@ -12,14 +13,23 @@
 
 .app {
   font-family: "PKMN-RBYGSC", Helvetica, sans-serif;
+} */
+
+@font-face {
+  font-family: "C&C Red Alert [INET]";
+  src: url("../public/fonts/C&C Red Alert [INET].ttf");
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
 }
+
+.app {
+  font-family: "C&C Red Alert [INET]", Helvetica, sans-serif;
+}
+
 
 .text-blue-theme {
   color: #64ffda;
-}
-
-.text-xxs {
-  font-size: 0.65rem;
 }
 
 button:focus {

@@ -41,14 +41,14 @@ function Hero({
       <div className="mx-8 md:mx-28 lg:mx-80 h-screen flex flex-col justify-center text-gray-100">
         <div className="tracking-wider flex justify-center">
           <div>
-            <p className="text-blue-theme">Hi, my name is</p>
-            <h1 className="mt-8 text-3xl lg:text-6xl tracking-widest">
+            <p className="text-blue-theme text-xl">Hi, my name is</p>
+            <h1 className="mt-8 text-5xl lg:text-6xl tracking-widest">
               Quang Tran.
             </h1>
           </div>
         </div>
 
-        <div className="mt-40 flex justify-center items-center text-xs text-gray-400">
+        <div className="mt-40 flex justify-center items-center text-xl text-gray-400">
           <label className={BUTTON_LABEL_CLASSNAME}>
             <div className="opacity-0 down-arrow">
               <Image

@@ -83,7 +83,7 @@ export default function Home() {
 
   return (
     <>
-      <div className="app bg-gray-900">
+      <div className="app bg-gray-900 text-xl">
         {/* <Navbar /> */}
 
         <NavbarMobile
@@ -106,7 +106,7 @@ export default function Home() {
 
         <Contact ref={contactRef} />
 
-        <footer className="px-8 py-5 border-t border-gray-700 text-center text-xxs text-gray-600 font-light">
+        <footer className="px-8 py-5 border-t border-gray-700 text-center text-sm text-gray-600 font-light">
           Made with️ ❤️ © 2021 Co.
         </footer>
       </div>

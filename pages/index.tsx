@@ -39,7 +39,7 @@ export default function Home() {
   }
 
   function setNavbarStateWrapper(bShow) {
-    setNavbarState(bShow ? "" : "hidden");
+    setNavbarState(bShow);
   }
 
   if (typeof window !== "undefined") {

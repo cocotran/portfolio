@@ -1,23 +1,23 @@
 [
     {
-        "name": "Lorem ipsum dolor",
-        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec eu odio ut est tristique mollis. Donec condimentum lorem non congue fringilla.",
-        "stack": ["Next.js", "Flask", "Firebase"],
+        "name": "Colculator",
+        "description": "A handy tools for engineering students, offering a wealth of smart calculators, simulators, online notebooks, cheat sheets, and class notes ",
+        "stack": ["Next.js", "Tailwind", "Firebase", "Flask"],
         "url": "https://colculator.com/",
         "github": ""
     },
     {
-        "name": "Lorem ipsum dolor sit",
-        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec eu odio ut est tristique mollis. Donec condimentum lorem non congue fringilla.",
-        "stack": ["Lorem ", "Java"],
-        "url": "",
-        "github": ""
+        "name": "Find Me My Lab",
+        "description": "Small web app to help Concordians find an available lab host with specific software.",
+        "stack": ["JavaScript", "Flask", "Beautiful Soup"],
+        "url": "https://find-me-my-lab.herokuapp.com/",
+        "github": "https://github.com/cocotran/find_me_my_lab"
     },
     {
-        "name": "Lorem",
-        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec eu odio ut est tristique mollis. Donec condimentum lorem non congue fringilla.",
-        "stack": ["Lorem ", "Java"],
-        "url": "",
-        "github": ""
+        "name": "Retro Console Racing Game",
+        "description": "Simple C++ console game that runs on the web with the help of Web Assembly.",
+        "stack": ["C++ ", "Web Assembly"],
+        "url": "https://cocotran.github.io/console-racing-game/",
+        "github": "https://github.com/cocotran/console-racing-game"
     }
 ]

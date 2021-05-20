@@ -30,9 +30,9 @@ function Navbar({
             " hidden sm:flex fixed top-0 w-full px-8 py-3 justify-end items-center text-gray-400 border-b border-gray-700 shadow-xl bg-gray-900 z-0"
           }
         >
-          {buttons.map(function (item) {
+          {buttons.map(function (item, index: number) {
             return (
-              <div>
+              <div key={index}>
                 <label className="inline-flex items-center side-bar-button-label hover:text-gray-300">
                   <div className="opacity-0 arrow inline-flex">
                     <Image

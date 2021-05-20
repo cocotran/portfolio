@@ -34,9 +34,9 @@ function SideBar({
       <nav className="w-3/4 h-full bg-gray-800 shadow-xl">
         <div className="pb-5 w-full h-full inline-flex text-gray-400 text-sm">
           <div className="mx-auto my-auto">
-            {buttons.map(function (item) {
+            {buttons.map(function (item, index: number) {
               return (
-                <div>
+                <div key={index}>
                   <label className="mb-8 inline-flex items-center side-bar-button-label hover:text-gray-300">
                     <div className="opacity-0 arrow inline-flex">
                       <Image

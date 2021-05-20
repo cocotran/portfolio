@@ -1,12 +1,13 @@
 import React from "react";
-import SmallProjectCard from "../components/Projects/SmallProjectCard";
+import SmallProjectCard from "./Projects/SmallProjectCard";
 
 import projectJson from "../projects/projects.json";
+import style from "../styles/style.json";
 
 function Projects(props, ref) {
   return (
     <>
-      <div className="mx-8 md:mx-28 lg:mx-40 xl:mx-80 mt-40 text-gray-100 tracking-wide">
+      <div className={style.margin + " mt-40 text-gray-100 tracking-wide"}>
         <div ref={ref} className="h-3"></div>
         <div className="flex items-center">
           <h1 className="text-3xl tracking-wider ">Projects</h1>
@@ -14,9 +15,9 @@ function Projects(props, ref) {
         </div>
 
         <div className="mt-8">
-          {projectJson.map((item) => {
+          {projectJson.map((item, index: number) => {
             return (
-              <div className="mb-8">
+              <div key={index} className="mb-8">
                 <SmallProjectCard project={item} />
               </div>
             );

@@ -1,8 +1,6 @@
 import Image from "next/image";
 import { useRef, useState, useEffect } from "react";
 
-import style from "../styles/style.json";
-
 function Hero({
   skillsButtonHandler,
   projectsButtonHandler,
@@ -40,7 +38,7 @@ function Hero({
 
   return (
     <>
-      <div className={style.margin + " h-screen flex flex-col justify-center text-gray-100"}>
+      <div className={"mx-8 md:mx-28 lg:mx-40 xl:mx-96 h-screen flex flex-col justify-center text-gray-100"}>
         <div className="tracking-wider flex justify-center">
           <div>
             <p className="text-blue-theme text-xl sm:text-2xl">

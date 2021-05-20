@@ -1,12 +1,10 @@
 import Image from "next/image";
 import React from "react";
 
-import style from "../styles/style.json";
-
 function Contact(props, ref) {
   return (
     <>
-      <div className={style.margin + " my-40 text-gray-100 tracking-wide"}>
+      <div className={"mx-8 md:mx-28 lg:mx-40 xl:mx-96 my-40 text-gray-100 tracking-wide"}>
         <div ref={ref} className="h-3"></div>
         <div className="flex items-center">
           <h1 className="text-3xl tracking-wider ">Contact</h1>

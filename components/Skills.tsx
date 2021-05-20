@@ -1,7 +1,5 @@
 import React from "react";
 
-import style from "../styles/style.json";
-
 function Skills(props, ref) {
   const language = ["C++", "Java", "Python", "TypeScript"];
 
@@ -9,7 +7,7 @@ function Skills(props, ref) {
 
   return (
     <>
-      <div className={style.margin + " text-gray-300 tracking-wide"}>
+      <div className={"mx-8 md:mx-28 lg:mx-40 xl:mx-96 text-gray-300 tracking-wide"}>
         <div ref={ref} className="h-3"></div>
         <div className="flex items-center">
           <h1 className="text-3xl tracking-wider text-gray-100">Skills</h1>
